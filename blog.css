@@ -1,0 +1,273 @@
+/*@media all and (min-width: 960px) {
+    body{
+        font-size: 23px !important;
+    }
+    h2 {font-size: 36px !important;}
+}
+@media all and (max-width: 959px) and (min-width: 600px) {
+    body{
+        font-size: 18px !important;
+    }
+    h2 {font-size: 28px !important;}
+}
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body{
+        font-size: 16px !important;
+    }
+    h2 {font-size: 23px !important;}
+
+}*/
+/*body {
+  position: relative;
+}*/
+
+body {
+  height: 100%;
+  /*padding-bottom: 200px;*/
+  background: white;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+  min-height:100%;
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+}
+
+@font-face {
+    font-family: marketingScript;
+    src: url(marketing-script/MarketingScript.ttf);
+}
+
+#mynav{
+  margin-bottom: 0;
+  background: #6D6E70;
+  border: 0!important;
+  border-radius: 0;
+  color: white !important;
+  max-height: 72px;
+}
+
+.nav li, a {
+  color: white !important;
+}
+
+.navbar-brand img {
+      margin-top: -29px;
+}
+
+#button-toggle {
+  padding: 4px;
+  margin-top: 13px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+
+.header-social {
+  padding-top: 8px
+}
+
+#header-menu a {
+  padding: 12px 10px 12px 10px;
+}
+
+#header-menu a:hover {
+  background-color: #FDBC10;
+}
+
+#header-menu a:active {
+  background-color: #FDBC10 !important;
+  border-bottom: 2px solid #4BBFAF !important;
+}
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+/*ul.topnav li.icon {display: none;}*/
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:1011px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:1011px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+
+./*jumbo {
+    min-height: 25vh;
+    background: url(http://placehold.it/1900x400);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+/*CTA*/
+#divider hr {
+  /*hr element styled inline because I could not override bootstrap*/
+  /*border: 2px solid #4BBFAF !important;*/
+}
+
+.ysn-logo{
+  text-align: center;
+  margin-top: 10px;
+}
+.ysn-copy h2, p {
+  text-align: center;
+}
+
+/*cta-cards container*/
+
+.cta-cards {
+  text-align: center;
+}
+
+.cta-cards a {
+  text-decoration: none !important;
+}
+
+/*individual cta card*/
+.cta-card {
+  min-height: 13em;
+  border-radius: 3px;
+}
+
+.cta-card h4 {
+  padding-top: 1em;
+  font-size: 32;
+  font-family: marketingScript;
+}
+
+#cta-card-1 {
+  background-image: url(http://placehold.it/180x180);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cta-card-2 {
+  background-image: url(http://placehold.it/180x180);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cta-card-3 {
+  background-image: url(http://placehold.it/180x180);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.home-sidebar {
+  margin-top: 10px;
+  border-radius: 3px;
+  background: rgba(109,110,112,0.2);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.home-sidebar p {
+  text-align: left;
+  padding-top: 16px;
+}
+
+#sidebar hr {
+  border: 1.5px solid #4BBFAF !important;
+}
+
+.box-1-img {
+  padding-top: 1em;
+}
+
+.book-cover {
+  max-height: 12em;
+  max-width: auto;
+  float:left;
+  clear: right;
+  padding-right: 10px
+}
+
+.infusion-field {
+  margin-bottom: 5px;
+}
+.infusion-field input {
+  min-width: 100%;
+  border-radius: 3px;
+}
+
+/*page layout*/
+
+.page-header-img {
+  padding: 11px 15px 11px 15px;
+  border-radius: 22px;
+}
+
+.page-header1 h1{
+  text-align: center;
+  font-family: marketingScript;
+  font-size: 50px;
+  margin: 0;
+}
+
+.page-content p {
+  text-align: left;
+}
+
+.img-profile-inText {
+  clear: left;
+  float: right;
+  padding-bottom: 1px;
+  padding-left: 5px;
+}
+
+
+footer {
+  background-color: #6D6E70;
+  color:white;
+  text-align: center;
+}
+
+footer i {
+  color:white;
+}
+
+/*ABOUT PAGE*/
+
+
+
+
+
